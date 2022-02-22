@@ -35,7 +35,7 @@ li a{
     background-color: #fff;
     box-shadow: 0 3px 10px rgba(0,0,0,0.6);
     border-radius: 10px;
-    z-index: 51;
+    z-index: 52;
 }
 .fa-question-circle{
     animation: zoom 1.5s ease-in-out infinite alternate;
@@ -170,7 +170,7 @@ a{
     /* overflow: visible; */
     width: 400px;
     /* padding-top: 40px; */
-    z-index: 100; 
+    z-index: 50; 
     justify-self: flex-end;
 }
 

@@ -16,6 +16,9 @@
         grid-template-columns: auto auto;
         row-gap: 20px;
     }
+    .help{
+        top: 70vh;
+    }
 
 }
 
