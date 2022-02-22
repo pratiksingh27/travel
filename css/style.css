@@ -37,6 +37,17 @@ li a{
     border-radius: 10px;
     z-index: 51;
 }
+.fa-question-circle{
+    animation: zoom 1.5s ease-in-out infinite alternate;
+}
+@keyframes zoom{
+    0%{
+        zoom: 80%;
+    }
+    100%{
+        zoom: 100%;
+    }
+}
 /* h1{
     color: var(--primary-color);
 } */
@@ -376,6 +387,7 @@ a{
 }
 .img4{
     background-image: url(../images/goldentemple.jpg);
+    color: white;
 }
 .img13{
     background-image: url(../images/dzukou-valley.jpg);
@@ -399,14 +411,17 @@ a{
 }
 .img p{
     opacity: 0;
+    height: 220px;
     font-size: 40px;
+    display: grid;
+    align-content: center;
 }
 .img p:hover{
     opacity: 100%;
     font-weight: 800;
 }
 .img:hover{
-    opacity: 80%;
+    opacity: 50%;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 /* contact us page */
@@ -423,7 +438,11 @@ a{
 }
 .map{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 30px;  
+}
+.map iframe{
+    width: 300px;
+    height: 300px;
 }
 /* footer */
 .footer{
@@ -436,21 +455,26 @@ a{
     margin-top: 120px;
 }
 hr{
-    width: 100px;
-    /* margin-bottom: 15px; */
+    width: 115px;
+    margin-bottom: 15px;
 }
 .fab{
     margin-top: 10px;
+    margin-right: 5px;
     cursor: pointer;
 }
 .h2{
     padding-bottom: 15px;
+    font-size: 24px!important;
 }
 .mb-1 li{
     margin-bottom: 15px;
 }
 .mb-1 li a{
     color: #fff;
+}
+ol, ul{
+    padding-left: 0!important;
 }
 
 

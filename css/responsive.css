@@ -11,6 +11,10 @@
     .left figure img{
         width: 250px;
     }
+    .footer{
+        display: grid;
+        grid-template-columns: auto auto
+    }
 
 }
 
@@ -56,10 +60,7 @@
     
 }
 @media(max-width:600px){
-    .footer{
-        display: grid;
-        grid-template-columns: auto auto
-    }
+    
     .navbar{
         grid-template-columns: auto;
         justify-content: center;
@@ -75,10 +76,22 @@
         margin-bottom: 10px;
     }
 }
+@media(max-width:625px){
+    .navbar{
+        grid-template-columns: auto;
+        justify-content: center!important;
+        text-align: center;
+    }
+    .logo{
+        margin-bottom: 10px;
+    }
+    .fas{
+        margin-top: 10px;
+    }
+}
 @media(max-width:615px){
     .grid-3{
         grid-template-columns:  1fr;
-        grid-template-areas: 1fr;
     }
 }
 @media(max-width:400px){
@@ -107,5 +120,9 @@
     }
     .part-2 figure img{
         width: 100px;
+    }
+    .map iframe{
+        width: 200px;
+        height: 300px;
     }
 }
