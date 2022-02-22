@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+:root{
+    --primary-color:#1DF28D;
+    --secondary-color: #3d155f;
+}
+li{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    color: #333;
+}
+.present{
+    font-weight: 900;
+}
+.logo{
+    color: white;
+}
+.help{
+    position: fixed;
+    top: 90vh;
+    right: 5px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    z-index: 51;
+}
+/* h1{
+    color: var(--primary-color);
+} */
+
+/* navbar css start */
+.navbar{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5px;
+    background-color: var(--secondary-color);
+    ;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+}
+nav ul li{
+    margin: 0 10px;
+}
+nav ul li a{
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.fas{
+   color: #fff;
+   cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* overflow: auto; */
+    padding: 0 40px;
+    /* overflow: hidden; */
+}
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+.btn{
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-outline{
+    border: 1px solid #fff;
+    background-color: var(--primary-color);
+    margin-top: 20px;
+    color: #333;
+
+}
+.btn-outline:hover{
+    font-weight: 900;
+}
+.btn-primary{
+    border: 0;
+    background-color: var(--primary-color);   
+}
+.btn-primary:hover{
+    font-weight: 700;
+}
+.btn-secondary{
+    border: 0;
+    background-color: var(--secondary-color);
+    color: white;
+    margin: 30px 0;
+}
+.btn-secondary:hover{
+    font-weight: 700;
+}
+.tc{
+    text-align: center;
+}
+.text-align{
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding-top: 5px;
+}
+
+/* navbar end */
+
+/* showcase */
+.showcase{
+    height: 400px;
+    /* padding-top:25px ; */
+    /* background-color: var(--primary-color); */
+    /* color: white; */
+    position: relative;
+}
+
+.showcase h1{
+    font-size: 40px;
+}
+
+.showcase p{
+    margin: 20px 0;
+}
+
+.showcase .grid{
+    grid-template-columns: 38% 62%;
+    /* overflow: hidden; */
+    gap: 30px;
+}
+
+.showcase-text p{
+    margin-bottom: 40px;
+}
+
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 400px;
+    /* overflow: visible; */
+    width: 400px;
+    /* padding-top: 40px; */
+    z-index: 100; 
+    justify-self: flex-end;
+}
+
+.showcase-form .form-control{
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email']{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+.showcase-form input:focus{
+    outline: none;
+}
+.showcase::before,.showcase::after{
+    content: '';
+    position: absolute;
+    height: 120px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: white;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+.card{
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+/* showcase section end */
+
+/* about us start */
+.about{
+    padding: 120px 0 50px 0;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.row h1{
+    margin-bottom: 20px;
+}
+/* about part */
+.bg{
+    /* background-color: var(--secondary-color); */
+    height: 300px;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    background-attachment: scroll;
+    
+}
+.section-2{
+    padding-top: 50px;
+}
+.company{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.company-text{
+    align-self: flex-start;
+}
+.company-text h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.one .fas{
+    color: #333;
+    margin-bottom: 5px;
+}
+.one{
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 10px;
+    column-gap: 20px;
+}
+/* end */
+
+/* service */
+.service{
+    margin-top: 20px;
+}
+.grid figure img{
+    width: 300px;
+    position: relative;
+    top: 30px;
+}
+.tc{
+    margin-top: 40px;
+}
+.part-1{
+    text-align: end;
+    margin-top: 30px;
+}
+.container .h1{
+    margin-top: 50px;
+    text-align: end;
+}
+.flex-2{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+}
+.part-2 figure img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+.part-2{
+    margin-top: 20px;
+}
+/* end */
+
+/* places section */
+.place{
+    margin-top: 100px;
+}
+.place h1{
+    margin-bottom: 30px;
+}
+
+.row-1{
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+}
+.row-2{
+    margin-top: 40px;
+}
+.img{
+    width: 230px;
+    height: 230px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}
+.img1{
+    background-image: url(../images/p-1.jpg);
+}
+.img10{
+    background-image: url(../images/Hawa-mahal.png);
+}
+.img3{
+    background-image: url(../images/Jalmahal-Night-View.png);
+    color: white;
+}
+.img6{
+    background-image: url(../images/nahargarh-jaipur.png);
+}
+.img9{
+    background-image: url(../images/City-Place.png);
+}
+.img12{
+    background-image: url(../images/hampi.jpg);
+}
+.img7{
+    background-image: url(../images/munnar.jpg);
+}
+.img5{
+    background-image: url(../images/leh.jpg);
+}
+.img11{
+    background-image: url(../images/darzaling.jpg);
+}
+.img2{
+    background-image: url(../images/srinagar.jpg);
+}
+.img8{
+    background-image: url(../images/varanashi.jpg);
+}
+.img4{
+    background-image: url(../images/goa.webp);
+}
+.img13{
+    background-image: url(../images/dzukou-valley.jpg);
+}
+.img14{
+    background-image: url(../images/goldentemple.jpg);
+    color: white;
+}
+.img15{
+    background-image: url(../images/red-fort.jfif);
+    
+}
+.img16{
+    background-image: url(../images/SOU.jpg);
+}
+.img17{
+    background-image: url(../images/Thar.jfif);
+}
+.img18{
+    background-image: url(../images/tawang-india.jpg);
+    color: white;
+}
+.img p{
+    opacity: 0;
+    font-size: 40px;
+}
+.img p:hover{
+    opacity: 100%;
+    font-weight: 800;
+}
+.img:hover{
+    opacity: 80%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+/* contact us page */
+.form{
+    margin-top: 30px;
+}
+.contact-form{
+    margin: 10px 0;
+    width: 100%;
+}
+.contact-form input{
+    padding: 5px 10px;
+    width: 40%;
+}
+.map{
+    text-align: center;
+    margin-top: 30px;
+}
+/* footer */
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    padding: 50px 30px 0 30px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    margin-top: 120px;
+}
+hr{
+    width: 100px;
+    margin-bottom: 15px;
+}
+.fab{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.h2{
+    padding-bottom: 15px;
+}
+.mb-1 li{
+    margin-bottom: 15px;
+}
+.mb-1 li a{
+    color: #fff;
+}
+
+
+/* place page */
+.search{
+    text-align: center;
+    margin-top: 50px;
+    overflow-x: hidden;
+}
+.search-control{
+    padding: 5px 20px;
+}
+/* .search input{
+    width: 30vw;
+} */
+.search button{
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.search button:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    border: 0;
+    border-radius: 2px;
+}
+
+.search input:focus{
+    outline: none;
+} 
