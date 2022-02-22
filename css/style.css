@@ -292,8 +292,9 @@ a{
     margin-top: 50px;
     text-align: end;
 }
-.flex-2{
-    display: flex;
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
     justify-content: flex-end;
     column-gap: 10px;
 }
@@ -435,7 +436,7 @@ a{
 }
 hr{
     width: 100px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 .fab{
     margin-top: 10px;
