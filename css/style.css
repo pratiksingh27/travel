@@ -6,7 +6,9 @@
 }
 :root{
     --primary-color:#1DF28D;
+    --primary2-color:#084026;
     --secondary-color: #3d155f;
+    --secondary2-color:#df678c;
 }
 li{
     list-style-type: none;
@@ -46,7 +48,7 @@ li a{
     justify-content: space-around;
     align-items: center;
     padding-top: 5px;
-    background-color: var(--secondary-color);
+    background:linear-gradient(to right ,var(--secondary-color) 0%, var(--secondary2-color) 120%);
     ;
 }
 nav ul{
@@ -118,7 +120,7 @@ a{
     text-align: center;
     background-color: var(--secondary-color);
     color: white;
-    padding-top: 5px;
+    padding: 5px 0;
 }
 
 /* navbar end */
@@ -238,6 +240,7 @@ a{
 .company{
     margin-top: 30px;
     margin-bottom: 50px;
+    text-align: center;
 }
 .company-text{
     align-self: flex-start;
@@ -246,9 +249,18 @@ a{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.one .fas{
-    color: #333;
-    margin-bottom: 5px;
+.one img{
+    width: 70px;
+    border-radius: 70px;
+    position: relative;
+    top: -20px;
+}
+.fa-star{
+    color: gold;
+    margin-top: 10px;
+}
+.fa-star-half{
+    color: gold;
 }
 .one{
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
@@ -283,7 +295,7 @@ a{
 .flex-2{
     display: flex;
     justify-content: flex-end;
-    column-gap: 20px;
+    column-gap: 10px;
 }
 .part-2 figure img{
     width: 150px;
@@ -313,8 +325,8 @@ a{
 }
 .img{
     width: 230px;
-    height: 230px;
-    border: 1px solid black;
+    height: 220px;
+    /* border: 1px solid black; */
     margin-bottom: 20px;
     display: grid;
     justify-content: center;
@@ -322,6 +334,8 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    box-shadow:  0 3px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
     
 }
 .img1{
@@ -338,7 +352,7 @@ a{
     background-image: url(../images/nahargarh-jaipur.png);
 }
 .img9{
-    background-image: url(../images/City-Place.png);
+    background-image: url(../images/leh.jpg);
 }
 .img12{
     background-image: url(../images/hampi.jpg);
@@ -347,29 +361,28 @@ a{
     background-image: url(../images/munnar.jpg);
 }
 .img5{
-    background-image: url(../images/leh.jpg);
+    background-image: url(../images/City-Place.png);
 }
 .img11{
     background-image: url(../images/darzaling.jpg);
 }
 .img2{
-    background-image: url(../images/srinagar.jpg);
+    background-image: url(../images/red-fort.jfif);
 }
 .img8{
     background-image: url(../images/varanashi.jpg);
 }
 .img4{
-    background-image: url(../images/goa.webp);
+    background-image: url(../images/goldentemple.jpg);
 }
 .img13{
     background-image: url(../images/dzukou-valley.jpg);
 }
 .img14{
-    background-image: url(../images/goldentemple.jpg);
-    color: white;
+    background-image: url(../images/goa.webp);
 }
 .img15{
-    background-image: url(../images/red-fort.jfif);
+    background-image: url(../images/srinagar.jpg);
     
 }
 .img16{
@@ -392,7 +405,7 @@ a{
 }
 .img:hover{
     opacity: 80%;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 /* contact us page */
 .form{
@@ -414,9 +427,9 @@ a{
 .footer{
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 50px 30px 0 30px;
-    background-color: var(--secondary-color);
+    background: linear-gradient(to right ,var(--secondary-color) 0%, var(--secondary2-color) 120%);
     color: #fff;
     margin-top: 120px;
 }
@@ -425,7 +438,7 @@ hr{
     margin-bottom: 15px;
 }
 .fab{
-    margin-left: 10px;
+    margin-top: 10px;
     cursor: pointer;
 }
 .h2{

@@ -8,6 +8,9 @@
     .service-left{
         width: 300px;
     }
+    .left figure img{
+        width: 250px;
+    }
 
 }
 
