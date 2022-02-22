@@ -44,6 +44,9 @@
     .container h1{
         text-align: center;
     }
+    .container .h1{
+        text-align: center;
+    }
     
 }
 @media(max-width:600px){
