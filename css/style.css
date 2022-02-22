@@ -295,8 +295,9 @@ a{
 .grid-2{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    justify-items: end;
     column-gap: 10px;
+    justify-items: end;
+    
 }
 .part-2 figure img{
     width: 150px;
