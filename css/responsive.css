@@ -69,6 +69,7 @@
         grid-template-columns: auto;
         justify-content: center;
         text-align: center;
+        height: auto;
     }
     .fas{
         visibility: hidden;
